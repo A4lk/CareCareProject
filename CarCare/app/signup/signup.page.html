@@ -1,0 +1,16 @@
+<ion-header> 
+  <ion-toolbar color="success">
+    <ion-title> SignUp</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="light">
+  
+ <ion-card color="light">
+  
+<ion-input placeholder="Email" type="email" [(ngModel)]="email"><ion-icon name="mail-sharp"></ion-icon></ion-input>
+<ion-input placeholder="Password" type="password" [(ngModel)]="password"><ion-icon name="lock-closed-sharp"></ion-icon></ion-input>
+
+<ion-button expand="full" color="light" (click)="signup()">Create</ion-button>
+</ion-card>
+</ion-content>

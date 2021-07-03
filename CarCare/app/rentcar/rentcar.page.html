@@ -1,0 +1,69 @@
+<ion-header>
+  
+  <ion-toolbar color="success">
+    <ion-buttons slot="start" color="light">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-grid>
+      <ion-row>
+        <ion-col offset="3">
+          <ion-title>Rent Car</ion-title>
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+   
+    <img src="assets\img\car rental logo 2.gif"/>
+        
+  
+  <ion-item color="primary">      Welcome To Cars Company :
+  </ion-item>
+  
+ 
+  <ion-item>
+    <ion-label>Choose Car</ion-label>
+    
+    <ion-select [interfaceOptions]="customActionSheetOptions" value="Hilux" interface="action-sheet" placeholder="Select One">
+      <ion-select-option value="Hilux" >Hilux<ion-label>:90SR</ion-label></ion-select-option>
+      <ion-select-option value="Accent">Accent<ion-label>:50SR</ion-label></ion-select-option>
+      <ion-select-option value="Sonata">Sonata<ion-label>:50SR</ion-label></ion-select-option>
+      <ion-select-option value="Accord">Accord<ion-label>:50SR</ion-label></ion-select-option>
+      <ion-select-option value="Spark">Spark<ion-label>:50SR</ion-label></ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Choose Model</ion-label>
+    <ion-select [interfaceOptions]="customActionSheetOptions"  interface="action-sheet" placeholder="Select One">
+      <ion-select-option value="2020">2020</ion-select-option>
+      <ion-select-option value="2019">2019</ion-select-option>
+      <ion-select-option value="2018">2018</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Choose Color</ion-label>
+    <ion-select [interfaceOptions]="customActionSheetOptions" interface="action-sheet" placeholder="Select One">
+      <ion-select-option value="White">White</ion-select-option>
+      <ion-select-option value="Black">Black</ion-select-option>
+      <ion-select-option value="Red">Red</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item lines="none"></ion-item>
+  
+  <ion-grid>
+    <ion-row>
+      <ion-col offset="7">
+        <ion-button color="success" expand="block" (click)="add()">SAVA</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <p>
+    ControllerBy@CarcoolRentals
+  </p>
+
+</ion-content>

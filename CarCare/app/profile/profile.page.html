@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Profile </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="light">
+  <ion-item lines="none" color="light">
+    <p>if you don't have Profile click on add</p>
+    </ion-item>
+    <ion-fab horizontal="end" vertical="bottom" slot="fixed">
+      <ion-fab-button color="success" (click)="Create()">
+        <ion-icon name="add">
+        </ion-icon>
+    
+      </ion-fab-button>
+    </ion-fab>
+    <ion-item *ngFor="let x of view1">
+      <ion-avatar><img src="assets\img\dummy-profile-pic.png"/></ion-avatar>
+         : Hi {{x.data().Fname}} Welcome to your Profile
+      </ion-item>
+  <ion-card color="success">
+  <ion-list  *ngFor="let x of view1">
+  
+    <ion-item color="light">
+    <ion-card-title>  First Name : {{ x.data().Fname}}  </ion-card-title>
+    <ion-icon name="create" slot="end" (click)="updateprofilefname(x)"></ion-icon>
+  </ion-item>
+
+<ion-item color="light">  
+      <ion-card-title > Last Name : {{x.data().Lname}} 
+      </ion-card-title>    
+      <ion-icon name="create" slot="end" (click)="updateprofilelname(x)"></ion-icon>
+
+
+</ion-item>
+    <ion-item color="light">
+    <ion-card-title > Phone Number : {{x.data().phoneNumber}}</ion-card-title>
+    
+      <ion-icon name="create" slot="end" (click)="updateprofilephone(x)"></ion-icon>
+     </ion-item>
+  
+  
+  </ion-list>
+  </ion-card>
+  <img src="assets\img\unnamed.png"/>
+
+</ion-content>
+
+<ion-tab-bar slot="bottom" color="light">
+      
+  <ion-tab-button tab="Profile">
+    <ion-icon color="dark" name="person-circle-sharp"></ion-icon>
+    <ion-label>Profile</ion-label>
+  </ion-tab-button>
+  
+  <ion-tab-button tab="Home" (click)="moveToHome()">
+  <ion-icon color="dark" name="home-sharp"></ion-icon>
+  <ion-label>Home</ion-label>
+  </ion-tab-button>
+
+  <ion-tab-button tab="addRequset" (click)="moveToAddRequset()">
+  <ion-icon name="add-circle-sharp"color="dark"></ion-icon>
+  <ion-label>Add Requset</ion-label>
+  </ion-tab-button>
+  
+  <ion-tab-button tab="Schedule" (click)="moveToSchedule()">
+  <ion-icon name="calendar-sharp" color="dark"></ion-icon>  
+  <ion-label>Schedule</ion-label>      
+  </ion-tab-button>
+
+ </ion-tab-bar>
+

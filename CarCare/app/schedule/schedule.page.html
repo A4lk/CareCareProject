@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>schedule</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let x of ss">
+
+  <ion-item >
+    <ion-card-title> Repair: {{x.data().repair}}  </ion-card-title>
+    </ion-item>
+
+    <ion-item>
+    <ion-card-title> Clean : {{x.data().clean}}  </ion-card-title>
+  </ion-item>
+  
+    <ion-item>
+      <ion-card-title> Design : {{x.data().design}}  </ion-card-title>
+    </ion-item>
+    
+      <ion-item>
+        <ion-card-title> decoration : {{x.data().decoration}}  </ion-card-title>
+      </ion-item>
+
+      <ion-item>
+    <ion-card-title> Arrive Time : {{x.data().ArrivalDate}}  </ion-card-title>
+  </ion-item>
+  
+  
+  </ion-card>
+
+</ion-content>
+
+<ion-tab-bar slot="bottom" color="light">
+      
+  <ion-tab-button tab="Profile" (click)="moveToProfile()">
+    <ion-icon color="dark" name="person-circle-sharp"></ion-icon>
+    <ion-label>Profile</ion-label>
+  </ion-tab-button>
+  
+  <ion-tab-button tab="Home" (click)="moveToHome()">
+  <ion-icon color="dark" name="home-sharp"></ion-icon>
+  <ion-label>Home</ion-label>
+  </ion-tab-button>
+
+  <ion-tab-button tab="addRequset" (click)="moveToAddRequset()">
+  <ion-icon name="add-circle-sharp" color="dark"></ion-icon>
+  <ion-label>Add Requset</ion-label>
+  </ion-tab-button>
+  
+  <ion-tab-button tab="Schedule">
+  <ion-icon name="calendar-sharp" color="dark"></ion-icon>  
+  <ion-label>Schedule</ion-label>      
+  </ion-tab-button>
+
+ </ion-tab-bar>
+
+
+

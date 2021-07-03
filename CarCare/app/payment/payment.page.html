@@ -1,0 +1,36 @@
+<ion-header >
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start" color="light">
+      <ion-back-button ></ion-back-button>
+    </ion-buttons>
+    <ion-grid>
+      <ion-row>
+        <ion-col offset="4">
+          <ion-title> Payment</ion-title>
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <ion-list>
+    <ion-radio-group value="biff">
+      <ion-list-header>
+      <h3>How would you like to pay ?</h3>
+      </ion-list-header>
+  
+      <ion-item>
+        <ion-label>Credit card</ion-label>
+        <ion-radio slot="start" value="biff" (click)="credit()"></ion-radio>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Cash</ion-label>
+        <ion-radio slot="start" value="griff" (click)="cash1()"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+  </ion-content>
+   

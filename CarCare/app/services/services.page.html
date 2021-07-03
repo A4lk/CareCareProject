@@ -1,0 +1,137 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-grid>
+      <ion-row>
+        <ion-col offset="3">
+          <ion-title> NEW REQUEST</ion-title>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content >
+
+<ion-card color="light">
+  
+    <ion-grid>
+      <ion-row>
+        <ion-col offset="5">
+          <ion-icon color="primary" size="large" name="build-sharp"></ion-icon>    
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid>
+      <ion-row>
+        <ion-col offset="3">
+    
+        <p>We work from 8 AM to 9 PM
+        </p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+        <ion-button color="primary" (click)="repairAlert()" expand="full">Repair </ion-button>
+
+</ion-card>
+
+
+<ion-card color="light">
+  
+    <ion-grid>
+      <ion-row>
+        <ion-col offset="5">
+          <ion-icon color="primary" size="large" name="water-sharp"></ion-icon>        
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid>
+      <ion-row>
+        <ion-col offset="3">
+    
+        <p>We work from 8 AM to 9 PM
+        </p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    
+  <ion-button color="primary" (click)="cleanAlert()"  expand="full">Clean </ion-button>
+      
+</ion-card>
+
+
+
+<ion-card color="light">
+    <ion-grid>
+      <ion-row>
+        <ion-col offset="5">
+          <ion-icon color="primary" size="large" name="car-sport-sharp"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid>
+      <ion-row>
+        <ion-col offset="3">
+    
+        <p>We work from 8 AM to 9 PM
+        </p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  
+        <ion-button color="primary" (click)="designAlert()"  expand="full"><label color="primary">Design</label> </ion-button>
+
+     
+</ion-card>
+
+
+<ion-card color="light">
+    <ion-grid>
+      <ion-row>
+        <ion-col offset="5">
+          <ion-icon color="primary" size="large" name="hammer-sharp"></ion-icon>  
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid>
+      <ion-row>
+        <ion-col offset="3">
+    
+        <p>We work from 8 AM to 9 PM
+        </p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+        <ion-button color="primary" (click)="decorationAlert()"  expand="full">Decoration </ion-button>
+
+</ion-card>
+
+
+</ion-content>
+
+
+
+<ion-tab-bar slot="bottom" color="light">
+      
+  <ion-tab-button tab="Profile" (click)="moveToProfile()">
+    <ion-icon color="dark" name="person-circle-sharp"></ion-icon>
+    <ion-label>Profile</ion-label>
+  </ion-tab-button>
+  
+  <ion-tab-button tab="Home" (click)="moveToHome()">
+  <ion-icon color="dark" name="home-sharp"></ion-icon>
+  <ion-label>Home</ion-label>
+  </ion-tab-button>
+
+  <ion-tab-button tab="addRequset">
+  <ion-icon name="add-circle-sharp" color="dark"></ion-icon>
+  <ion-label>Add Requset</ion-label>
+  </ion-tab-button>
+  
+  <ion-tab-button tab="Schedule" (click)="moveToSchedule()">
+  <ion-icon name="calendar-sharp" color="dark"></ion-icon>  
+  <ion-label>Schedule</ion-label>      
+  </ion-tab-button>
+
+ </ion-tab-bar>
